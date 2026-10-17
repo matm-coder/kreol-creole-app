@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koko Creole - Learn Mauritian Creole</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- React & React DOM CDNs -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Babel Standalone to compile JSX on the fly in browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background-color: #f7fee7;
+    }
+  </style>
+</head>
+<body class="bg-lime-50 text-slate-800">
+
+  <!-- React Mount Root -->
+  <div id="root"></div>
+
+  <!-- React Application Code -->
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // --- COURSE DATA ---
+    const COURSE_UNITS = [
+      {
+        id: 1,
+        title: "Unit 1: Fonksyon di Baze",
+        description: "Essential greetings & pronouns",
+        color: "bg-emerald-500",
+        lessons: [
+          {
+            id: "u1l1",
+            title: "Greetings & Introductions",
+            exercises: [
+              {
+                type: "mc",
+                question: "How do you say 'Hello / Good morning' in Mauritian Creole?",
+                options: ["Bonswar", "Bonzur", "Ki manyer", "Mersi"],
+                answer: "Bonzur"
+              },
+              {
+                type: "sentence",
+                question: "Translate: 'My name is Sarah'",
+                words: ["Mo", "apel", "Sarah", "To", "bonzur"],
+                answer: ["Mo", "apel", "Sarah"]
+
+                
